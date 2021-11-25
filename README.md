@@ -7,7 +7,7 @@ OpenCV-Scheme - Computer Vision bindings for Scheme
 
 This project creates OpenCV bindings for the scheme language using the scheme interpreter for CS61A at UC Berkeley. 
 
-![Robotics](./image.png)
+![Robotics](./image.png = 50x50)
 
 To create a video file capture device:
 
