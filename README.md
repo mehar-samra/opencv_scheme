@@ -15,19 +15,31 @@ To create a video file capture device:
 
 Or you can capture from your webcamera:
 
+```
 (define webcam (cv2.videocapture 0))
+```
 
 To read a frame:
 
+```
 (define img (device 'read))
+```
 
 To display a frame:
 
+```
 (cv2.imshow "Scheme CV2 Demo" img)
+```
+
+You can additionally apply filters, such as:
+
+```
+(define hsv (cv2.cvtcolor img 'cv2.COLOR_BGR2HSV))
+```
 
 ### Bindings
 
-The complete set of bindings are implemented are as follows: cv2.videocapture, which allows you to capture frames from an mp4 video file or images from your web camera; cv2.imshow, which displays an OpenCV image; cv2.cvtcolor, which converts an image to a different color space, such as HSV; cv2.inrange, which applies a filter that creates a black-and-white threshold image; and draw_contours, which is a utility method that detects contours in a threshold image and draws bounding box rectangles around the detected objects. 
+The complete set of bindings that are implemented are as follows: cv2.videocapture, which allows you to capture frames from an mp4 video file or images from your web camera; cv2.imshow, which displays an OpenCV image; cv2.cvtcolor, which converts an image to a different color space, such as HSV; cv2.inrange, which applies a filter that creates a black-and-white threshold image; and draw_contours, which is a utility method that detects contours in a threshold image and draws bounding box rectangles around the detected objects. 
 
 ### Samples
 
